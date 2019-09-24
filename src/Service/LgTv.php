@@ -218,7 +218,6 @@ class LgTv
                 'id' => $channel->channelId,
                 'number' => $channel->channelNumber,
                 'name' => $channel->channelName,
-                //'logo' => $channel->imgUrl,
             ];
         })
             ->toArray();
