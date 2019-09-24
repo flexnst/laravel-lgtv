@@ -12,7 +12,7 @@
   ],
   "minimum-stability": "dev",
   "require": {
-    "laravel/framework": "5.*|6.*",
+    "laravel/framework": "^5.*",
     "textalk/websocket": "1.0.*"
   },
   "autoload": {
