@@ -1,0 +1,31 @@
+{
+  "name": "flexnst/laravel-lgtv",
+  "description": "LG WebOS TV control with Laravel",
+  "keywords": ["lg","tv","lgtv","webos","laravel"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Alexandr Chernov",
+      "email": "flex.nst@gmail.com"
+    }
+  ],
+  "require": {
+    "laravel/framework": "5.*|6.*",
+    "textalk/websocket": "1.0.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Flexnst\\LgTv\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Flexnst\\LgTv\\LgTvServiceProvider"
+      ],
+      "aliases": {
+        "LgTv": "Flexnst\\LgTv\\Facades\\LgTvFacade"
+      }
+    }
+  }
+}
