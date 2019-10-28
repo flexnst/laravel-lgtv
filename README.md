@@ -1,5 +1,7 @@
 # Control LG WebOS TV with Laravel
 
+The package allows you to control the status of LG Smart TVs based on WebOS, switch channels, control sound, launch applications and emulate pressing buttons on the remote control.
+
 ## Installation
 
 ```
@@ -53,7 +55,9 @@ return [
 ## Available methods
 
 - discover(bool $as_array = false)
+- is_on()
 - turn_on()
+- turn_off()
 - show_float(string $message)
 - open_browser_at(string $url)
 - get_mute()

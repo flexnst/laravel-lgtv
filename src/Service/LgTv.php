@@ -139,6 +139,19 @@ class LgTv
         return $out ?? false;
     }
 
+    public function is_on()
+    {
+        try {
+            $sock = fsockopen(config("lgtv.devices.{$this->device}.ip"), 3000, $errCode, $errStr, 1);
+            $result = $sock !== false;
+            fclose($sock);
+        } catch (\Throwable $e) {
+            $result = false;
+        }
+
+        return $result;
+    }
+
     public function turn_on(): self
     {
         $mac = config("lgtv.devices.{$this->device}.mac");
