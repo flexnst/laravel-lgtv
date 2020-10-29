@@ -2,7 +2,13 @@
   "name": "flexnst/laravel-lgtv",
   "type": "library",
   "description": "LG WebOS TV control with Laravel",
-  "keywords": ["lg","tv","lgtv","webos","laravel"],
+  "keywords": [
+    "lg",
+    "tv",
+    "lgtv",
+    "webos",
+    "laravel"
+  ],
   "license": "MIT",
   "authors": [
     {
@@ -12,7 +18,7 @@
   ],
   "minimum-stability": "dev",
   "require": {
-    "laravel/framework": "5.8.*",
+    "laravel/framework": "^5.8|^6.0|^7.0|^8.0",
     "textalk/websocket": "1.0.*"
   },
   "autoload": {
